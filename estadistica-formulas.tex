@@ -1,3 +1,4 @@
+% !TEX root = formulas-estadisticas.tex 
 % Author: Alfredo Sánchez Alberca (asalber@ceu.es)
 
 \sloppy
@@ -9,226 +10,260 @@
 
 \begin{multicols*}{2}
 
-	\subsection*{Estadística Descriptiva}
+\subsection*{Estadística Descriptiva}
 
-	\begin{tcolorbox}[hbox, title=Frecuencias]
-		\begin{minipage}{0.4\textwidth}
-			\begin{description}
-				\item [Tamaño muestral] $n$ número de individuos en la muestra.
-			\end{description}
-			\begin{description}
-				\item [Frecuencia Absolulta] $n_i$ (nº de $x_i$ en la muestra)
-				\item [Frecuencia Relativa] $f_i=n_i/n$
-				\item [Frec. Absoluta Acumulada] $N_i=\sum_{k=0}^in_i$
-				\item [Frec. Relativa Acumulada] $F_i=N_i/n$
-			\end{description}
-		\end{minipage}
-	\end{tcolorbox}
+\begin{tcolorbox}[hbox, title=Frecuencias]
+\begin{minipage}{0.4\textwidth}
+\begin{description}
+\item [Tamaño muestral] $n$ número de individuos en la muestra.
+\end{description}
+\begin{description}
+\item [Frecuencia Absolulta] $n_i$ (nº de $x_i$ en la muestra)
+\item [Frecuencia Relativa] $f_i=n_i/n$
+\item [Frec. Absoluta Acumulada] $N_i=\sum_{k=0}^in_i$
+\item [Frec. Relativa Acumulada] $F_i=N_i/n$
+\end{description}
+\end{minipage}
+\end{tcolorbox}
 
-	\begin{tcolorbox}[hbox, title=Estadísticos de tendencia central]
-		\begin{minipage}{0.4\textwidth}
-			\begin{description}
-				\item [Media] $\bar{x}=\dfrac{\sum x_in_i}{n}$
-				\item [Mediana] $me$ El valor con frec. rel. acumulada $F_{me}=0.5$.
-				\item [Moda] $mo$ El valor más frecuente.
-			\end{description}
-		\end{minipage}
-	\end{tcolorbox}
+\begin{tcolorbox}[hbox, title=Estadísticos de tendencia central]
+\begin{minipage}{0.4\textwidth}
+\begin{description}
+\item [Media] $\bar{x}=\dfrac{\sum x_in_i}{n}$
+\item [Mediana] $me$ El valor con frec. rel. acumulada $F_{me}=0.5$.
+\item [Moda] $mo$ El valor más frecuente.
+\end{description}
+\end{minipage}
+\end{tcolorbox}
 
-	\begin{tcolorbox}[hbox, title=Estadísticos de posición]
-		\begin{minipage}{0.4\textwidth}
-			\begin{description}
-				\item [Cuartiles] $Q_1,Q_2,Q_3$ dividen la distribución en 4 partes iguales.
-				      Sus frec. rel. acumuladas son
-				      $F_{Q_1}=0.25$, $F_{Q_2}=0.5$ and $F_{Q_3}=0.75$.
-				\item [Percentiles] $P_1,P_2,\cdots,P_{99}$ dividen la distribución en 100 partes iguales.\\
-				      Su frec. rel. acumulada es $F_{P_i}=i/100$.
-			\end{description}
-		\end{minipage}
-	\end{tcolorbox}
+\begin{tcolorbox}[hbox, title=Estadísticos de posición]
+\begin{minipage}{0.4\textwidth}
+\begin{description}
+\item [Cuartiles] $Q_1,Q_2,Q_3$ dividen la distribución en 4 partes iguales.
+      Sus frec. rel. acumuladas son
+      $F_{Q_1}=0.25$, $F_{Q_2}=0.5$ and $F_{Q_3}=0.75$.
+\item [Percentiles] $P_1,P_2,\cdots,P_{99}$ dividen la distribución en 100 partes iguales.\\
+      Su frec. rel. acumulada es $F_{P_i}=i/100$.
+\end{description}
+\end{minipage}
+\end{tcolorbox}
 
-	\begin{tcolorbox}[hbox, title=Estadísticos de dispersión]
-		\begin{minipage}{0.4\textwidth}
-			\begin{description}
-				\item [Rango intercuartílico] $IQR=Q_3-Q_1$
-				\item [Varianza] $s^2=\dfrac{\sum (x_i-\bar x)^2n_i}{n}=\dfrac{\sum x_i^2n_i}{n}-\bar x^2$
-				\item [Desviación típica] $s=+\sqrt{s^2}$
-				\item [Coeficiente de variación] $cv=\dfrac{s}{|\bar{x}|}$
-			\end{description}
-		\end{minipage}
-	\end{tcolorbox}
+\begin{tcolorbox}[hbox, title=Estadísticos de dispersión]
+\begin{minipage}{0.4\textwidth}
+\begin{description}
+\item [Rango intercuartílico] $IQR=Q_3-Q_1$
+\item [Varianza] $s^2=\dfrac{\sum (x_i-\bar x)^2n_i}{n}=\dfrac{\sum x_i^2n_i}{n}-\bar x^2$
+\item [Desviación típica] $s=+\sqrt{s^2}$
+\item [Coeficiente de variación] $cv=\dfrac{s}{|\bar{x}|}$
+\end{description}
+\end{minipage}
+\end{tcolorbox}
 
-	\begin{tcolorbox}[hbox, title=Estadísticos de forma]
-		\begin{minipage}{0.4\textwidth}
-			\begin{description}
-				\item [Coeficiente de asimetría] $g_1=\dfrac{\sum(x_i-\bar{x})^3f_i}{s^3}$
-				\item [Coeficiente de apuntamiento] $g_2=\dfrac{\sum(x_i-\bar{x})^4f_i}{s^4}-3$
-			\end{description}
-		\end{minipage}
-	\end{tcolorbox}
+\begin{tcolorbox}[hbox, title=Estadísticos de forma]
+\begin{minipage}{0.4\textwidth}
+\begin{description}
+\item [Coeficiente de asimetría] $g_1=\dfrac{\sum(x_i-\bar{x})^3f_i}{s^3}$
+\item [Coeficiente de apuntamiento] $g_2=\dfrac{\sum(x_i-\bar{x})^4f_i}{s^4}-3$
+\end{description}
+\end{minipage}
+\end{tcolorbox}
 
-	\begin{tcolorbox}[hbox, title=Transformaciones lineales]
-		\begin{minipage}{0.4\textwidth}
-			\begin{description}
-				\item[Transformación lineal] $y=a+bx$
-				      \begin{align*}
-					      \bar y & = a+b\bar x \\
-					      s_y    & = bs_x
-				      \end{align*}
-				\item[Tipificación] $z=\dfrac{x-\bar x}{s_x}$
-			\end{description}
-		\end{minipage}
-	\end{tcolorbox}
-
-
-	\subsection*{Regresión y correlación}
-
-	\begin{tcolorbox}[hbox, title=Regresión lineal]
-		\begin{minipage}{0.4\textwidth}
-			\begin{description}
-				\item [Covarianza] $s_{xy}=\dfrac{\sum x_iy_jn_{ij}}{n}-\bar{x}\bar{y}$
-				\item [Rectas de regresión]:
-				      \begin{align*}
-					      \mbox{$y$ on $x$} & : y=\bar{y}+\dfrac{s_{xy}}{s_x^2}(x-\bar{x}) \\
-					      \mbox{$x$ on $y$} & : x=\bar{x}+\dfrac{s_{xy}}{s_y^2}(y-\bar{y})
-				      \end{align*}
-				\item [Coeficientes de regresión]
-				      \[
-					      \mbox{($y$ on $x$) } b_{yx}=\dfrac{s_{xy}}{s_x^2}\quad \mbox{($x$ on
-						      $y$) } b_{xy}=\dfrac{s_{xy}}{s_y^2}
-				      \]
-				\item[Coeficiente de determinación]
-				      \[r^2=\dfrac{s_{xy}^2}{s_x^2s_y^2} \qquad 0\leq r^2\leq 1\]
-				\item[Coeficiente de correlación]
-				      \[r=\dfrac{s_{xy}}{s_xs_y}.\qquad -1\leq r\leq 1\]
-			\end{description}
-		\end{minipage}
-	\end{tcolorbox}
-
-	\medskip
-
-	\begin{tcolorbox}[hbox, title=Regresión no lineal]
-		\begin{minipage}{0.4\textwidth}
-			\begin{description}
-				\item[Modelo exponencial] $y=e^{a+bx}$\\
-				      Aplicar el logaritmo a la variable dependiente y calcular la recta de regresión $\log y = a+bx$.
-				\item[Modelo logarítmico] $y=a+b\log x$\\
-				      Aplicar el logaritmo a la variable independiente y calcular la recta de regresión $y=a+b\log x$.
-				\item[Modelo potencial] $y=ax^b$\\
-				      Aplicar el logaritmo a ambas variables y calcular la recta de regresión $\log y = a+b\log x$.
-			\end{description}
-		\end{minipage}
-	\end{tcolorbox}
-
-  \newpage 
-
-	\subsection*{Probabilidad}
-
-	\begin{tcolorbox}[hbox, title=Operaciones de sucesos]
-		\begin{minipage}{0.4\textwidth}
-				\textbf{Unión}
-				      \begin{center}
-					      \input{img/union}
-				      \end{center}
-				\textbf{Intersección}
-				      \begin{center}
-					      \input{img/interseccion}
-				      \end{center}
-				\textbf{Contrario}
-				      \begin{center}
-					      \input{img/contrario}
-				      \end{center}
-				\textbf{Diferencia}
-				      \begin{center}
-					      \input{img/diferencia}
-				      \end{center}
-		\end{minipage}
-  \end{tcolorbox}
-  
-  \begin{tcolorbox}[hbox, title=Álgebra de sucesos]
-		\begin{minipage}{0.4\textwidth}
-			\begin{description}
-		\item[Idempotencia] $A\cup A=A$,\quad $A\cap A=A$
-        \item[Conmutativa] $A\cup B=B\cup A$,\quad $A\cap B = B\cap A$
-        \item[Asociativa] $(A\cup B)\cup C = A\cup (B\cup C)$,\quad $(A\cap B)\cap C = A\cap (B\cap C)$
-        \item[Distributiva] $(A\cup B)\cap C = (A\cap C)\cup (B\cap C)$,\quad $(A\cap B)\cup C = (A\cup C)\cap (B\cup C)$
-        \item[Elemento neutro] $A\cup \emptyset=A$,\quad $A\cap \Omega=A$
-        \item[Elemento absorvente] $A\cup \Omega=\Omega$,\quad $A\cap \emptyset=\emptyset$.
-        \item[Elemento simétrico complementario] $A\cup \overline A = \Omega$,\quad $A\cap \overline A= \emptyset$
-        \item[Doble contrario] $\overline{\overline A} = A$
-        \item[Leyes de Morgan] $\overline{A\cup B} = \overline A\cap \overline B$,\quad $\overline{A\cap B} = \overline A\cup \overline B$
-			\end{description}
-		\end{minipage}
-	\end{tcolorbox}
-
-	\begin{tcolorbox}[hbox, title=Probabilidad básica]
-		\begin{minipage}{0.4\textwidth}
-			\begin{description}
-				\item [Unión] $P(A\cup B)=P(A)+P(B)-P(A\cap B)$
-				\item [Intersección] $P(A\cap B)=P(A)P(B|A)$
-				\item [Diferencia] $P(A-B)=P(A)-P(A\cap B)$
-				\item [Contrario] $P(\overline{A})=1-P(A)$
-			\end{description}
-		\end{minipage}
-	\end{tcolorbox}
-
-	\begin{tcolorbox}[hbox, title=Probabilidad condicionada]
-		\begin{minipage}{0.4\textwidth}
-			\begin{description}
-				\item [Probabilidad condicionada] $P(A|B)=\dfrac{P(A\cap B)}{P(B)}$
-				\item [Sucesos independientes] $P(A|B)=P(A)$.
-				\item [Teorema de la probabilidad total] \[P(B)=\sum_{i=1}^n P(A_i)P(B|A_i)\]
-				\item [Teorema de Bayes] \[P(A_i|B)=\dfrac{P(A_i)P(B|A_i)}{\sum_{i=1}^n P(A_i)P(B|A_i)}\]
-			\end{description}
-		\end{minipage}
-	\end{tcolorbox}
-
-	\begin{tcolorbox}[hbox, title=Test diagnósticos]
-		\begin{minipage}{0.4\textwidth}
-			\begin{description}
-				\item[Prevalencia] Proporción de individuos con la enfermedad $P(E)$
-				\item[Sensibilidad] $P(+|E)$
-				\item[Especificidad] $P(-|\overline{E})$
-				\item[Valor predictivo positivo (VPP)] $P(E|+)$
-				\item[Valor predictivo negativo (VPN)] $P(\overline{E}|-)$
-				\item[Razón de verosimilitud positiva (RV+)] $\dfrac{P(+|E)}{P(+|\overline{E})}$
-				\item[Razón de verosimilitud negativa (RV-)] $\dfrac{P(-|E)}{P(-|\overline{E})}$
-			\end{description}
-		\end{minipage}
-	\end{tcolorbox}
+\begin{tcolorbox}[hbox, title=Transformaciones lineales]
+\begin{minipage}{0.4\textwidth}
+\begin{description}
+\item[Transformación lineal] $y=a+bx$
+      \begin{align*}
+      \bar y & = a+b\bar x \\
+      s_y    & = bs_x
+      \end{align*}
+\item[Tipificación] $z=\dfrac{x-\bar x}{s_x}$
+\end{description}
+\end{minipage}
+\end{tcolorbox}
 
 
-	\subsection*{Variables Aleatorias}
+\subsection*{Regresión y correlación}
 
-	\begin{tcolorbox}[hbox, title=Discretas]
-		\begin{minipage}{0.4\textwidth}
-			\begin{description}
-				\item [Función de probabilidad Binomial $B(n,p)$]
-				      \[f(x)=\binom{n}{x}p^x (1-p)^{n-x}\]
-				\item [Función de probabilidad Poisson $P(\lambda)$]
-				      \[f(x)=e^{-\lambda}\frac{\lambda^x}{x!}\]
-				\item [Ley de los casos raros] $B(n,p)\approx P(np)$ para $n\geq 30$ y $p\leq 0.1$.
-			\end{description}
-		\end{minipage}
-	\end{tcolorbox}
+\begin{tcolorbox}[hbox, title=Regresión lineal]
+\begin{minipage}{0.4\textwidth}
+\begin{description}
+\item [Covarianza] $s_{xy}=\dfrac{\sum x_iy_jn_{ij}}{n}-\bar{x}\bar{y}$
+\item [Rectas de regresión]:
+      \begin{align*}
+      \mbox{$y$ on $x$} & : y=\bar{y}+\dfrac{s_{xy}}{s_x^2}(x-\bar{x}) \\
+      \mbox{$x$ on $y$} & : x=\bar{x}+\dfrac{s_{xy}}{s_y^2}(y-\bar{y})
+      \end{align*}
+\item [Coeficientes de regresión]
+      \[
+      \mbox{($y$ on $x$) } b_{yx}=\dfrac{s_{xy}}{s_x^2}\quad \mbox{($x$ on
+      $y$) } b_{xy}=\dfrac{s_{xy}}{s_y^2}
+      \]
+\item[Coeficiente de determinación]
+      \[r^2=\dfrac{s_{xy}^2}{s_x^2s_y^2} \qquad 0\leq r^2\leq 1\]
+\item[Coeficiente de correlación]
+      \[r=\dfrac{s_{xy}}{s_xs_y}.\qquad -1\leq r\leq 1\]
+\end{description}
+\end{minipage}
+\end{tcolorbox}
 
-  \begin{tcolorbox}[hbox, title=Continuas]
-		\begin{minipage}{0.4\textwidth}
-			\begin{description}
-				\item[Normal $N(\mu,\sigma)$]
-              \[f(x)= \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}\]
-              \textbf{Normal Estándar $N(0,1)$}
-				\item[Chi-cuadrado $\chi^2(n)$]
-              \[X = Z_1^2+\cdots +Z_n^2,\]
-              donde $Z_i\sim N(0,1)$.
-        \item[T de Student $T(n)$] 
-        \[T = \frac{Z}{\sqrt{X/n}},\]
-        donde $Z\sim N(0,1)$ y $X\sim \chi^2(n)$.
-        \item[F de Fisher $F(n,m)$]
-        \[F = \frac{X/m}{Y/n},\]
-        donde $X\sim \chi^2(m)$ y $Y\sim \chi^2(n)$.
-			\end{description}
-		\end{minipage}
-	\end{tcolorbox}
+\medskip
+
+\begin{tcolorbox}[hbox, title=Regresión no lineal]
+\begin{minipage}{0.4\textwidth}
+\begin{description}
+\item[Modelo exponencial] $y=e^{a+bx}$\\
+      Aplicar el logaritmo a la variable dependiente y calcular la recta de regresión $\log y = a+bx$.
+\item[Modelo logarítmico] $y=a+b\log x$\\
+      Aplicar el logaritmo a la variable independiente y calcular la recta de regresión $y=a+b\log x$.
+\item[Modelo potencial] $y=ax^b$\\
+      Aplicar el logaritmo a ambas variables y calcular la recta de regresión $\log y = a+b\log x$.
+\end{description}
+\end{minipage}
+\end{tcolorbox}
+
+\newpage
+
+\subsection*{Probabilidad}
+
+\begin{tcolorbox}[hbox, title=Operaciones de sucesos]
+\begin{minipage}{0.4\textwidth}
+\textbf{Unión}
+\begin{center}
+\input{img/union}
+\end{center}
+\textbf{Intersección}
+\begin{center}
+\input{img/interseccion}
+\end{center}
+\textbf{Contrario}
+\begin{center}
+\input{img/contrario}
+\end{center}
+\textbf{Diferencia}
+\begin{center}
+\input{img/diferencia}
+\end{center}
+\end{minipage}
+\end{tcolorbox}
+
+\begin{tcolorbox}[hbox, title=Álgebra de sucesos]
+\begin{minipage}{0.4\textwidth}
+\begin{description}
+\item[Idempotencia] $A\cup A=A$,\quad $A\cap A=A$
+\item[Conmutativa] $A\cup B=B\cup A$,\quad $A\cap B = B\cap A$
+\item[Asociativa] $(A\cup B)\cup C = A\cup (B\cup C)$,\quad $(A\cap B)\cap C = A\cap (B\cap C)$
+\item[Distributiva] $(A\cup B)\cap C = (A\cap C)\cup (B\cap C)$,\quad $(A\cap B)\cup C = (A\cup C)\cap (B\cup C)$
+\item[Elemento neutro] $A\cup \emptyset=A$,\quad $A\cap \Omega=A$
+\item[Elemento absorvente] $A\cup \Omega=\Omega$,\quad $A\cap \emptyset=\emptyset$.
+\item[Elemento simétrico complementario] $A\cup \overline A = \Omega$,\quad $A\cap \overline A= \emptyset$
+\item[Doble contrario] $\overline{\overline A} = A$
+\item[Leyes de Morgan] $\overline{A\cup B} = \overline A\cap \overline B$,\quad $\overline{A\cap B} = \overline A\cup \overline B$
+\end{description}
+\end{minipage}
+\end{tcolorbox}
+
+\begin{tcolorbox}[hbox, title=Probabilidad básica]
+\begin{minipage}{0.4\textwidth}
+\begin{description}
+\item [Unión] $P(A\cup B)=P(A)+P(B)-P(A\cap B)$
+\item [Intersección] $P(A\cap B)=P(A)P(B|A)$
+\item [Diferencia] $P(A-B)=P(A)-P(A\cap B)$
+\item [Contrario] $P(\overline{A})=1-P(A)$
+\end{description}
+\end{minipage}
+\end{tcolorbox}
+
+\begin{tcolorbox}[hbox, title=Probabilidad condicionada]
+\begin{minipage}{0.4\textwidth}
+\begin{description}
+\item [Probabilidad condicionada] $P(A|B)=\dfrac{P(A\cap B)}{P(B)}$
+\item [Sucesos independientes] $P(A|B)=P(A)$.
+\item [Teorema de la probabilidad total] \[P(B)=\sum_{i=1}^n P(A_i)P(B|A_i)\]
+\item [Teorema de Bayes] \[P(A_i|B)=\dfrac{P(A_i)P(B|A_i)}{\sum_{i=1}^n P(A_i)P(B|A_i)}\]
+\end{description}
+\end{minipage}
+\end{tcolorbox}
+
+\begin{tcolorbox}[hbox, title=Riesgos]
+\begin{minipage}{0.4\textwidth}
+\begin{center}
+\begin{tabular}{|l|c|c|}
+\cline{2-3}
+\multicolumn{1}{c|}{} & $E$ & $\overline E$ \\
+\hline
+Tratamiento           & $a$ & $b$           \\
+\hline
+Control               & $c$ & $d$           \\
+\hline
+\end{tabular}
+\end{center}
+\begin{description}
+\item[Prevalencia] Proporción de individuos con el suceso $E$: $P(E)$
+\item[Tasa de incidencia o riesgo absoluto] $R(E)=\dfrac{a}{a+b}$
+\item[Odds] $O(E)=\dfrac{a}{b}$
+\item[Riesgo relativo] $RR(E)=\dfrac{a/(a+b)}{c/(c+d)}$
+\item[Odds ratio] $OR(E)=\dfrac{a/b}{c/d}=\dfrac{a\cdot d}{b\cdot c}$
+\end{description}
+\end{minipage}
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[hbox, title=Test diagnósticos]
+\begin{minipage}{0.4\textwidth}
+\begin{center}
+\begin{tabular}{|l|c|c|}
+\cline{2-3}
+\multicolumn{1}{c|}{} & Enfermo $E$ & Sano $\overline E$ \\
+\hline
+Test $+$              & $VP$    & $FP$ \\
+\hline
+Test $-$              & $FN$    & $VN$ \\
+\hline
+\end{tabular}
+\end{center}
+\begin{description}
+\item[Sensibilidad] $P(+|E)=\dfrac{VP}{VP+FN}$
+\item[Especificidad] $P(-|\overline{E})=\dfrac{VN}{FP+VN}$
+\item[Valor predictivo positivo (VPP)] $P(E|+)=\dfrac{VP}{VP+FP}$
+\item[Valor predictivo negativo (VPN)] $P(\overline{E}|-)=\dfrac{VN}{FN+VN}$
+\item[Razón de verosimilitud positiva (RV+)] $\dfrac{P(+|E)}{P(+|\overline{E})}$
+\item[Razón de verosimilitud negativa (RV-)] $\dfrac{P(-|E)}{P(-|\overline{E})}$
+\end{description}
+\end{minipage}
+\end{tcolorbox}
+
+
+\subsection*{Variables Aleatorias}
+
+\begin{tcolorbox}[hbox, title=Discretas]
+\begin{minipage}{0.4\textwidth}
+\begin{description}
+\item [Función de probabilidad Binomial $B(n,p)$]
+      \[f(x)=\binom{n}{x}p^x (1-p)^{n-x}=\dfrac{n!}{x!(n-x)!}p^x (1-p)^{n-x}\]
+\item [Función de probabilidad Poisson $P(\lambda)$]
+      \[f(x)=e^{-\lambda}\frac{\lambda^x}{x!}\]
+\item [Ley de los casos raros] $B(n,p)\approx P(np)$ para $n\geq 30$ y $p\leq 0.1$.
+\end{description}
+\end{minipage}
+\end{tcolorbox}
+
+\begin{tcolorbox}[hbox, title=Continuas]
+\begin{minipage}{0.4\textwidth}
+\begin{description}
+\item[Normal $N(\mu,\sigma)$]
+      \[f(x)= \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}\]
+      \textbf{Normal Estándar $N(0,1)$}
+\item[Chi-cuadrado $\chi^2(n)$]
+      \[X = Z_1^2+\cdots +Z_n^2,\]
+      donde $Z_i\sim N(0,1)$.
+\item[T de Student $T(n)$]
+      \[T = \frac{Z}{\sqrt{X/n}},\]
+      donde $Z\sim N(0,1)$ y $X\sim \chi^2(n)$.
+\item[F de Fisher $F(n,m)$]
+      \[F = \frac{X/m}{Y/n},\]
+      donde $X\sim \chi^2(m)$ y $Y\sim \chi^2(n)$.
+\end{description}
+\end{minipage}
+\end{tcolorbox}
 
 \end{multicols*}
