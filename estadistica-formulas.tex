@@ -29,7 +29,7 @@
 \begin{tcolorbox}[hbox, title=Estadísticos de tendencia central]
 \begin{minipage}{0.4\textwidth}
 \begin{description}
-\item [Media] $\bar{x}=\dfrac{\sum x_in_i}{n}$
+\item [Media] $\bar{x}=\dfrac{\sum x_i}{n}$
 \item [Mediana] $me$ El valor con frec. rel. acumulada $F_{me}=0.5$.
 \item [Moda] $mo$ El valor más frecuente.
 \end{description}
@@ -45,6 +45,11 @@
 \item [Percentiles] $P_1,P_2,\cdots,P_{99}$ dividen la distribución en 100 partes iguales.\\
       Su frec. rel. acumulada es $F_{P_i}=i/100$.
 \end{description}
+\textbf{Interpolación}
+
+\resizebox{\textwidth}{!}{\input{img/interpolacion}}
+
+\[P_i=l_i+\frac{\frac{i}{100}-F_{i-1}}{F_i-F_{i-1}}(l_i-l_{i-1})\]
 \end{minipage}
 \end{tcolorbox}
 
@@ -52,7 +57,7 @@
 \begin{minipage}{0.4\textwidth}
 \begin{description}
 \item [Rango intercuartílico] $IQR=Q_3-Q_1$
-\item [Varianza] $s^2=\dfrac{\sum (x_i-\bar x)^2n_i}{n}=\dfrac{\sum x_i^2n_i}{n}-\bar x^2$
+\item [Varianza] $s^2=\dfrac{\sum (x_i-\bar x)^2}{n}=\dfrac{\sum x_i^2}{n}-\bar x^2$
 \item [Desviación típica] $s=+\sqrt{s^2}$
 \item [Coeficiente de variación] $cv=\dfrac{s}{|\bar{x}|}$
 \end{description}
@@ -62,8 +67,8 @@
 \begin{tcolorbox}[hbox, title=Estadísticos de forma]
 \begin{minipage}{0.4\textwidth}
 \begin{description}
-\item [Coeficiente de asimetría] $g_1=\dfrac{\sum(x_i-\bar{x})^3f_i}{s^3}$
-\item [Coeficiente de apuntamiento] $g_2=\dfrac{\sum(x_i-\bar{x})^4f_i}{s^4}-3$
+\item [Coeficiente de asimetría] $g_1=\dfrac{\sum(x_i-\bar{x})^3}{ns^3}$
+\item [Coeficiente de apuntamiento] $g_2=\dfrac{\sum(x_i-\bar{x})^4}{ns^4}-3$
 \end{description}
 \end{minipage}
 \end{tcolorbox}
@@ -87,7 +92,7 @@
 \begin{tcolorbox}[hbox, title=Regresión lineal]
 \begin{minipage}{0.4\textwidth}
 \begin{description}
-\item [Covarianza] $s_{xy}=\dfrac{\sum x_iy_jn_{ij}}{n}-\bar{x}\bar{y}$
+\item [Covarianza] $s_{xy}=\dfrac{\sum x_iy_j}{n}-\bar{x}\bar{y}$
 \item [Rectas de regresión]:
       \begin{align*}
       \mbox{$y$ on $x$} & : y=\bar{y}+\dfrac{s_{xy}}{s_x^2}(x-\bar{x}) \\
